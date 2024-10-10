@@ -6,18 +6,20 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 09:50:49 by etina             #+#    #+#             */
-/*   Updated: 2024/10/10 12:03:10 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/10 16:30:00 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
 
-int ft_strlen(char* str)
+size_t	ft_strlen(const char *s)
 {
-    int i; 
-    i = 0;
+	size_t	i;
 
-    while (str[i] != '\0')
-    {
-        i++;
-    } return i;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
