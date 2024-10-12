@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 19:56:09 by etina             #+#    #+#             */
-/*   Updated: 2024/10/12 14:12:53 by etina            ###   ########.fr       */
+/*   Created: 2024/10/12 14:05:56 by etina             #+#    #+#             */
+/*   Updated: 2024/10/12 14:13:42 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-# include <stddef.h>
-
-size_t	ft_strlen(const char *s);
-int		ft_isprint(int c);
-int		ft_isdigit(int i);
-int		ft_isascii(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-
-#endif
+int	ft_tolower(int c)
+{
+	if (c >= 65 && c <= 90)
+	{
+		c += 32;
+		return (c);
+	}
+	else
+	{
+		return (c);
+	}
+}
