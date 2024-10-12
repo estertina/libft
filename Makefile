@@ -6,7 +6,7 @@
 #    By: etina <etina@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 19:41:59 by etina             #+#    #+#              #
-#    Updated: 2024/10/12 12:38:06 by etina            ###   ########.fr        #
+#    Updated: 2024/10/12 12:52:40 by etina            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_isprint.c
+SRCS = ft_strlen.c ft_isprint.c ft_isdigit.c ft_isascii.c ft_isalpha.c ft_isalnum.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -26,7 +26,7 @@ $(NAME) : $(OBJS)
 all : $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(NAME)
 
 fclean: clean
 	rm -f $(NAME)
