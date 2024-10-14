@@ -6,7 +6,7 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:56:09 by etina             #+#    #+#             */
-/*   Updated: 2024/10/12 23:37:55 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/14 13:05:42 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-char	*ft_strstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 #endif
