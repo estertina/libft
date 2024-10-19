@@ -1,37 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 14:17:37 by etina             #+#    #+#             */
-/*   Updated: 2024/10/19 10:36:44 by etina            ###   ########.fr       */
+/*   Created: 2024/10/19 16:36:58 by etina             #+#    #+#             */
+/*   Updated: 2024/10/19 17:41:12 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*ch;
-	size_t			i;
+	size_t		i;
+	char		*d;
+	const char	*s;
 
+	d = (char *)dst;
+	s = (const char *)src;
+	if ((d == NULL) && (s == NULL))
+		return (NULL);
+	if (s < d)
+	{
+		i = len;
+		while (i > 0)
+		{
+			i--;
+			d[i] = s[i];
+		}
+		return (dst);
+	}
 	i = 0;
-	ch = (unsigned char *)b;
 	while (i < len)
 	{
-		ch[i] = (unsigned char)c;
+		d[i] = s[i];
 		i++;
 	}
-	return (b);
+	return (dst);
 }
-
 // int	main(void)
 // {
-// 	char	str[] = "Hello\n";
-// 	printf("mine: %s\n", ft_memset(str, 65, 3));
-// 	printf("orig: %s\n", memset(str, 65, 3));
+// 	char	src[] = "Hello";
+// 	char	dst[] = "thisisastring";
+// 	printf("%s\n", ft_memmove(dst, src, 5));
+// 	printf("%s\n", memmove(dst, src, 5));
 // }
