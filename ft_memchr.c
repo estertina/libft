@@ -6,7 +6,7 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 19:43:18 by etina             #+#    #+#             */
-/*   Updated: 2024/10/19 21:09:51 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/20 18:16:20 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int	main(void)
 // {
-// 	// size_t n;
-// 	// const char *str = "helloiamstring";
-// 	// int c;
+// 	size_t n;
+// 	const char *str = "helloiamstring";
+// 	int c;
 
-// 	// printf("mine: %s\n", ft_memset("helloiamstring", 'i', 5));
-// 	// printf("orig: %s\n", memset("helloiamstring", 'i', 5));
+// 	printf("mine: %s\n", ft_memchr("helloiamstring", 'i', 5));
+// 	printf("orig: %s\n", memchr("helloiamstring", 'i', 5));
 
-// 	ft_memchr(((void *)0), '\0', 0x20);
 // }

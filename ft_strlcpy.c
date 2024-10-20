@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 11:02:36 by etina             #+#    #+#             */
-/*   Updated: 2024/10/20 17:47:51 by etina            ###   ########.fr       */
+/*   Created: 2024/10/20 18:31:27 by etina             #+#    #+#             */
+/*   Updated: 2024/10/20 21:13:05 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t				i;
-	unsigned char		*d;
-	unsigned char		*s;
+	size_t	i;
 
+	if (dstsize == 0)
+		return (ft_strlen(src));
 	i = 0;
-	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
-	if ((d == NULL) && (s == NULL))
-		return (NULL);
-	while (i < n)
+	while ((src[i] != '\0') && (i < dstsize - 1))
 	{
-		d[i] = s[i];
+		dst[i] = src[i];
 		i++;
 	}
-	return (dst);
+	dst[i] = '\0';
+	return (ft_strlen(src));
 }
-
-// int	main(void)
-// {
-// 	char	src[] = "Hello";
-// 	char	dst[] = "thisisastring";
-// 	printf("%s", ft_memcpy(dst, src, 5));
-// 	printf("%s", memcpy(dst, src, 5));
-// }

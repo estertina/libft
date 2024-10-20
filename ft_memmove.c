@@ -6,7 +6,7 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 16:36:58 by etina             #+#    #+#             */
-/*   Updated: 2024/10/19 17:41:12 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/20 18:18:48 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
-	char		*d;
-	const char	*s;
+	size_t				i;
+	unsigned char		*d;
+	unsigned char		*s;
 
-	d = (char *)dst;
-	s = (const char *)src;
+	d = (unsigned char *)dst;
+	s = (unsigned char *)src;
 	if ((d == NULL) && (s == NULL))
 		return (NULL);
 	if (s < d)
