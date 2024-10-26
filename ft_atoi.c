@@ -6,11 +6,9 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:01:07 by etina             #+#    #+#             */
-/*   Updated: 2024/10/22 16:26:21 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/26 17:09:56 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -42,7 +40,7 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	printf("ft_atoi: %i\n", ft_atoi("--123 45678"));
-// 	printf("atoi: %i\n", atoi("--123 45678"));
+// 	printf("ft_atoi: %i\n", ft_atoi("8"));
+// 	printf("atoi: %i\n", atoi("8"));
 // 	return (0);
 // }

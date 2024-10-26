@@ -6,9 +6,12 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 22:17:41 by etina             #+#    #+#             */
-/*   Updated: 2024/10/26 14:19:43 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/26 17:43:23 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include <stddef.h>
 
 #include "libft.h"
 
@@ -28,7 +31,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
-	str = malloc(end - start + 1);
+	str = malloc((end - start + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	while (i < end - start)
@@ -41,8 +44,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 // int	main()
 // {
-// 	char	str[] = ",,,,hello whaddup,,,,";
-// 	char	set = ',';
+// 	char	str[] = ",,,,hello,, whaddup,hh,,,";
+// 	char	*set = ",h";
 // 	printf("%s", ft_strtrim(str, set));
 // 	return 0;
 // }

@@ -6,17 +6,19 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:56:09 by etina             #+#    #+#             */
-/*   Updated: 2024/10/22 17:10:51 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/26 17:03:58 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <limits.h>
 # include <stddef.h>
-# include <stdlib.h>
 # include <stdio.h>
+# include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
 
 size_t	ft_strlen(const char *s);
 int		ft_isprint(int c);
@@ -41,5 +43,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_itoa(int n);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif
