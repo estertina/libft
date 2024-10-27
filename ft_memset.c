@@ -6,13 +6,11 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 14:17:37 by etina             #+#    #+#             */
-/*   Updated: 2024/10/24 14:27:25 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:27:54 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

@@ -6,12 +6,11 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 21:10:43 by etina             #+#    #+#             */
-/*   Updated: 2024/10/25 22:14:52 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:29:54 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

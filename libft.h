@@ -6,7 +6,7 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 19:56:09 by etina             #+#    #+#             */
-/*   Updated: 2024/10/26 17:03:58 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:27:32 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <limits.h>
 # include <stddef.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>

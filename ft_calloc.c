@@ -6,12 +6,11 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:30:07 by etina             #+#    #+#             */
-/*   Updated: 2024/10/26 17:09:00 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:28:27 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

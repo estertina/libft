@@ -6,12 +6,9 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:49:49 by etina             #+#    #+#             */
-/*   Updated: 2024/10/27 15:17:48 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:29:42 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stddef.h>
-#include <stdlib.h>
 
 #include "libft.h"
 

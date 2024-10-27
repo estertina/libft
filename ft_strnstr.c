@@ -6,13 +6,11 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 09:43:37 by etina             #+#    #+#             */
-/*   Updated: 2024/10/19 10:55:58 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:30:11 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
-// #include <string.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

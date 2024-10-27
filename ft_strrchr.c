@@ -6,14 +6,11 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:08:02 by etina             #+#    #+#             */
-/*   Updated: 2024/10/16 20:01:42 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/27 15:30:16 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// #include <string.h>
-// #include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

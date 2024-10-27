@@ -6,7 +6,7 @@
 #    By: etina <etina@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 19:41:59 by etina             #+#    #+#              #
-#    Updated: 2024/10/26 17:49:50 by etina            ###   ########.fr        #
+#    Updated: 2024/10/27 15:22:41 by etina            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,3 +40,5 @@ fclean: clean
 
 re:
 	fclean all
+
+.PHONY: all clean fclean re bonus
