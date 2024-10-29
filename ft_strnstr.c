@@ -6,7 +6,7 @@
 /*   By: etina <etina@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 09:43:37 by etina             #+#    #+#             */
-/*   Updated: 2024/10/27 15:30:11 by etina            ###   ########.fr       */
+/*   Updated: 2024/10/29 16:16:16 by etina            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,20 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	c;
 
-	i = 0;
-	if (haystack && haystack[0] == '\0' && needle[0] != '\0')
-		return (NULL);
 	if (needle[0] == '\0')
-		return ((char *) haystack);
-	while (haystack[i] != needle[0] || i < len)
+		return ((char *)haystack);
+	i = 0;
+	while (i < len && haystack[i] != '\0')
 	{
-		c = 0;
-		while (haystack[i + c] == needle[c] && i + c < len)
+		if (haystack[i] == needle[0])
 		{
-			if (needle[c + 1] == '\0' || haystack[i + c + 1] == '\0')
+			c = 0;
+			while (i + c < len && haystack[i + c] == needle[c])
 			{
-				if (needle[c + 1] != '\0')
-					break ;
-				return ((char *)haystack + i);
+				if (needle[c + 1] == '\0')
+					return ((char *)haystack + i);
+				c++;
 			}
-			c++;
 		}
 		i++;
 	}
